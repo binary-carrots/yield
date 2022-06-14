@@ -1,12 +1,21 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+// With the Tauri API npm package:
+import { invoke } from "@tauri-apps/api/tauri";
+
+const quitApp = () => {
+  invoke("quit_app");
+};
+
+const sendMessage = () => {
+  invoke("send_message");
+};
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <HelloWorld msg="This is the start of yield" />
+  <button @click="quitApp">quit app</button>
+  <button @click="sendMessage">send message</button>
 </template>
 
 <style>
