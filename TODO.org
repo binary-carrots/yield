@@ -1,0 +1,33 @@
+#+title: Todo
+
+* Features
+** TODO Text-based interface using the text-to-component approach.
+
+/Transform keywords into clickable buttons that remain editable as text./
+
+This will set us apart, but only if it's beginner friendly. The feature will allow advanced users to develop fast, and beginners to become advanced I think.
+
+** TODO Snippets and completion
+
+No one wants to write out every single character nowadays.
+
+** TODO Saving the requests and requests suite.
+
+The logical choice of file format to save into is http files, since those resemble the Request Editor we intend to build closely, and are comptaible with a wide range of third party tools.
+
+** TODO Asynchronously run all requests in a suite/project.
+** TODO Ability to easily pipe the output elsewhere.
+** TODO Integration with testing frameworks(?)
+** TODO All requests async by default.
+
+Requests that require synchrony such as authentication, multi-step processes, etc. are to explicitly opt-in to the synchronous behavior.
+
+** TODO Refresh button
+** TODO Clear button (global "clear all" too)
+** TODO Response blocks
+
+Display a raw text response with a collapsable Headers panel
+
+** TODO Notebook files
+
+Everything is written in a "notebook." Notebooks are files that can contain prose, requests, and responses that become interactive when loaded into Yield.
